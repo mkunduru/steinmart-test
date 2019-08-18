@@ -1,35 +1,37 @@
-a {
-	color: #000;
-}
+/* 
+---------------------------------------------
+General Styles
+---------------------------------------------
+*/
 
-p.call-to-action {
+.container {
+	max-width: 1200px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: 700;
-}
-
-p.call-to-action--med {
-	font-size: 21px;
-	margin-top: 20px
-}
-
-p.call-to-action--lg {
-	font-size: 21px;
-}
-
-.img-responsive {
-	width: 100%;
-	max-width: none;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding: 0;
 }
 
 .img-wrapper {
 	position: relative;
 }
 
+.img-text-wrapper {
+	position: absolute;
+	display: flex;
+}
+
+/* 
+---------------------------------------------
+Typography
+---------------------------------------------
+*/
+
 h1 {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.33;
+	margin-top: 0;
 }
 
 h2 {
@@ -50,12 +52,61 @@ small {
 	text-decoration: underline;
 }
 
-.container {
-	max-width: 1200px;
+/* 
+---------------------------------------------
+Links
+---------------------------------------------
+*/
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+a.button {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 700;
+	background-color: #000;
+	padding: 0.5em 1.2em;
+	border-radius: 3px;
+}
+
+a.button:hover {
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #000;
+}
+
+p.call-to-action {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	line-height: 1.5em;
-	padding: 0;
+	font-weight: 700;
+}
+
+p.call-to-action--med {
+	font-size: 21px;
+	margin-top: 20px
+}
+
+p.call-to-action--lg {
+	font-size: 21px;
+	margin-bottom: 0;
+}
+
+/* 
+---------------------------------------------
+Bootstrap Overrides
+---------------------------------------------
+*/
+
+.img-responsive {
+	width: 100%;
+	max-width: none;
 }
 
 .row {
@@ -83,57 +134,12 @@ small {
     padding-right: 0 !important;
 }
 
-.new-arrivals-section {
-	background-color: #FF9966;
-}
 
-.new-arrivals-box {
-	margin: 10px;
-	border: 2px solid #fff;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.new-arrivals {
-	width: 200px;
-}
-
-.img-text-wrapper {
-	position: absolute;
-	display: flex;
-}
-
-.img-text-wrapper--jewellery {
-	left: 55%;
-	top: 20%;
-}
-
-.img-text-wrapper--jewellery > div {
-	width: 200px;
-	text-align: center;
-}
-
-.img-text-wrapper--bags {
-	left: 55%;
-	top: 12%;
-}
-
-.img-text-wrapper--watches {
-	left: 10%;
-	top: 50%;
-}
-
-.img-text-wrapper--shoes {
-	left: 5%;
-	top: 15%;
-}
-
-.img-text-wrapper--shoes > div {
-	width: 300px;
-}
+/* 
+---------------------------------------------
+Spend and Get Offer Section
+---------------------------------------------
+*/
 
 .offers, .offers-mobile {
 	background-image: url('../images/offers-bg.png');
@@ -143,7 +149,7 @@ small {
 	font-size: 21px;
 	font-weight: 400;
 	color: #00325B;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 20px;
 }
 
@@ -245,27 +251,164 @@ small {
 	margin: 0;
 }
 
-a:hover {
-	text-decoration: none;
-	color: #000;
+/* 
+---------------------------------------------
+New Arrivals section, Home Products Section
+---------------------------------------------
+*/
+
+.new-arrivals-section {
+	background-color: #FF9966;
 }
 
-a.button {
-	color: #fff;
-	font-size: 21px;
-	font-weight: 700;
-	background-color: #000;
-	padding: 0.5em 1.2em;
-	border-radius: 3px;
+.home-products-section {
+	background-color: #FFC1B2;
 }
 
-a.button:hover {
-	color: #000;
-	background-color: transparent;
-	border: 2px solid #000;
+.new-arrivals-box, .home-products-box {
+	margin: 10px;
+	border: 2px solid #fff;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.new-arrivals, .home-products {
+	width: 200px;
+}
+
+/* 
+---------------------------------------------
+Jewellers, Accessories and Shoes Section
+---------------------------------------------
+*/
+
+.img-text-wrapper--jewellery {
+	left: 55%;
+	top: 20%;
+}
+
+.img-text-wrapper--jewellery > div {
+	width: 200px;
+	text-align: center;
+}
+
+.img-text-wrapper--bags {
+	left: 55%;
+	top: 12%;
+}
+
+.img-text-wrapper--watches {
+	left: 10%;
+	top: 50%;
+}
+
+.img-text-wrapper--shoes {
+	left: 5%;
+	top: 15%;
+}
+
+.img-text-wrapper--shoes > div {
+	width: 300px;
 }
 
 
+/* 
+---------------------------------------------
+Media Queries
+---------------------------------------------
+*/
+
+/* 
+---------------------------------------------
+Media Queries for mobile phones under 480px
+---------------------------------------------
+*/
+@media (max-width: 480px) {
+  .col-xss-12.col-xs-6 {
+    width: 100% !important;
+  }
+
+  h1 {
+  	font-size: 24px;
+  }
+
+  h2 {
+  	font-size: 21px;
+  }
+
+  .mobile-offer--bottom .offer-value {
+  	font-size: 42px;
+  	line-height: 21px;
+  }
+
+  .mobile-offer--bottom .offer-type {
+  	font-size: 18px;
+  }
+
+  .mobile-offer {
+  	padding: 20px 10px;
+  }
+
+  .mobile-offer--bottom {
+  	padding-top: 30px;
+  }
+
+  .mobile-offer--bottom {
+  	padding-left: 30px;
+  	padding-right: 20px;
+  }
+
+  .mobile-offer--least .mobile-offer--bottom {
+  	padding-left: 20px;
+  	padding-right: 30px;
+  }
+
+  .new-arrivals, .home-products {
+  	width: 320px;
+  	padding: 20px;
+  }
+
+  .offers-mobile h1 {
+  	width: 90%;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .img-text-wrapper--jewellery > div {
+  	width: 162px;
+  }
+
+  .img-text-wrapper--watches {
+  	left: 5%;
+  	top: 8%;
+  }
+
+  .img-text-wrapper--bags {
+  	top: 8%;
+  }
+
+  .img-text-wrapper--shoes {
+  	top: 5%;
+  	left: 5%;
+  }
+
+  .img-text-wrapper--shoes > div {
+  	width: 200px;
+  }
+
+  .img-text-wrapper--shoes .call-to-action--med {
+  	width: 175px;
+  }
+}
+
+/* 
+---------------------------------------------
+Media Queries for iPad
+---------------------------------------------
+*/
 
 @media screen and (min-width: 768px) {
 	.container {
@@ -274,6 +417,10 @@ a.button:hover {
 
 	.new-arrivals {
 		width: 200px;
+	}
+
+	.home-products {
+		width: 255px;
 	}
 
 	h1,h2 {
@@ -343,14 +490,39 @@ a.button:hover {
 	a.button {
 		font-size: 18px;
 	}
+
+	.img-text-wrapper--watches {
+		left: 6%;
+		top: 40%;
+	}
+
+	.img-text-wrapper--bags {
+		left: 58%;
+		top: 5%;
+	}
+
+	.img-text-wrapper--shoes {
+		top: 25%;
+		left: 10%;
+	}
+
+	.img-text-wrapper--shoes > div {
+		width: 250px;
+	}
 }
+
+/* 
+---------------------------------------------------------
+Media Queries for iPad Pro and lower resolution Desktops
+---------------------------------------------------------
+*/
 
 @media screen and (min-width: 992px) {
 	.container {
 	    width: 100%;
 	}
 
-	.new-arrivals {
+	.new-arrivals, .home-products {
 		width: 300px;
 	}
 
@@ -359,7 +531,7 @@ a.button:hover {
 	}
 
 	h3 {
-		font-size: 21px;
+		font-size: 24px;
 	}
 
 	.container {
@@ -367,7 +539,7 @@ a.button:hover {
 	}
 
 	p.call-to-action {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	p.call-to-action--med {
@@ -376,10 +548,27 @@ a.button:hover {
 
 	p.call-to-action--lg {
 		font-size: 24px;
+		margin-top: 30px;
 	}
 
 	.img-text-wrapper--jewellery {
 		left: 60%;
+	}
+
+	.img-text-wrapper--shoes {
+		top: 15%;
+	}
+
+	.img-text-wrapper--shoes > div {
+		width: 225px;
+	}
+
+	.img-text-wrapper--bags {
+		left: 55%;
+	}
+
+	.img-text-wrapper--watches {
+		top: 45%;
 	}
 
 	.offers {
@@ -422,21 +611,34 @@ a.button:hover {
 	}
 }
 
+/* 
+---------------------------------------------------------
+Media Queries for Desktops
+---------------------------------------------------------
+*/
 @media screen and (min-width: 1200px) {
 	.container {
 	    width: 100%;
 	}
 
-	.new-arrivals-box {
+	.new-arrivals-box, .home-products-box {
 		margin: 20px;
+	}
+
+	.home-products {
+		width: 400px;
 	}
 
 	h1,h2 {
 		font-size: 36px;
 	}
 
+	h1 {
+		margin-bottom: 15px;
+	}
+
 	h3 {
-		font-size: 24px;
+		font-size: 30px;
 	}
 
 	.container {
@@ -444,7 +646,7 @@ a.button:hover {
 	}
 
 	p.call-to-action {
-		font-size: 18px;
+		font-size: 24px;
 	}
 
 	p.call-to-action--med {
@@ -456,6 +658,10 @@ a.button:hover {
 	}
 
 	.img-text-wrapper--jewellery > div {
+		width: 250px;
+	}
+
+	.img-text-wrapper--shoes > div {
 		width: 250px;
 	}
 
