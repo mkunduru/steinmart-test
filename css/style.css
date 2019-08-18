@@ -69,6 +69,10 @@ small {
   	margin-left: 0;
 }
 
+.row::before, .row:after {
+       display: none;
+}
+
 .row > [class*='col-'] {
   	display: flex;
   	flex-direction: column;
