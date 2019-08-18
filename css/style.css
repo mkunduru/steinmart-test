@@ -1,0 +1,489 @@
+p.call-to-action {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p.call-to-action--med {
+	font-size: 21px;
+	margin-top: 20px
+}
+
+p.call-to-action--lg {
+	font-size: 21px;
+}
+
+.img-responsive {
+	width: 100%;
+	max-width: none;
+}
+
+.img-wrapper {
+	position: relative;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.33;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 1.33em;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.33;
+}
+
+small {
+	font-weight: 300;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.container {
+	max-width: 1200px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding: 0;
+}
+
+.row {
+ 	display:  -webkit-box;
+  	display:     -moz-box;
+  	display: -webkit-flex;
+  	display:  -ms-flexbox;
+  	display:         flex;
+  	flex-wrap: wrap;
+  	margin-right: 0;
+  	margin-left: 0;
+}
+
+.row > [class*='col-'] {
+  	display: flex;
+  	flex-direction: column;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.new-arrivals-section {
+	background-color: #FF9966;
+}
+
+.new-arrivals-box {
+	margin: 10px;
+	border: 2px solid #fff;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.new-arrivals {
+	width: 200px;
+}
+
+.img-text-wrapper {
+	position: absolute;
+	display: flex;
+}
+
+.img-text-wrapper--jewellery {
+	left: 55%;
+	top: 20%;
+}
+
+.img-text-wrapper--jewellery > div {
+	width: 200px;
+	text-align: center;
+}
+
+.img-text-wrapper--bags {
+	left: 55%;
+	top: 12%;
+}
+
+.img-text-wrapper--watches {
+	left: 10%;
+	top: 50%;
+}
+
+.img-text-wrapper--shoes {
+	left: 5%;
+	top: 15%;
+}
+
+.img-text-wrapper--shoes > div {
+	width: 300px;
+}
+
+.offers, .offers-mobile {
+	background-image: url('../images/offers-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 400;
+	color: #00325B;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.offers {
+	display: none;
+}
+
+.offers-mobile {
+	font-size: 16px;
+	background-position: 10%;
+}
+
+.offer-details {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.mobile-offer-desc {
+	padding: 20px 0 40px 0;
+}
+
+.mobile-offer--best {
+	border-bottom: 2px solid #000;
+}
+
+.mobile-offer--least {
+	border-left: 2px solid #000;
+}
+
+.offer {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.offer-value {
+	font-size: 72px;
+	line-height: 40px;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: #F44e4e;
+}
+
+.mobile-offer {
+	padding: 50px 30px;
+}
+
+.mobile-offer--top {
+	font-size: 21px;
+	padding: 30px 0;
+}
+
+.mobile-offer--bottom .offer-value {
+	font-size: 48px;
+	line-height: 24px;
+}
+
+.offer-type {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.mobile-offer--bottom .offer-type {
+	font-size: 21px;
+}
+
+.offer-req {
+	margin: 0;
+}
+
+.offer-notes {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.offer-notes-content {
+	width: 200px;
+	justify-content: space-around;
+	display: flex;
+}
+
+.separator-circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.separator-text {
+	font-weight: 600;
+	font-size: 12px;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+a.button {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 700;
+	background-color: #000;
+	padding: 0.5em 1.2em;
+	border-radius: 3px;
+}
+
+a.button:hover {
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #000;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.container {
+	    width: 100%;
+	}
+
+	.new-arrivals {
+		width: 200px;
+	}
+
+	h1,h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	.container {
+		font-size: 18px;
+	}
+
+	p.call-to-action {
+		font-size: 14px;
+	}
+
+	p.call-to-action--med {
+		font-size: 18px;
+	}
+
+	p.call-to-action--lg {
+		font-size: 21px;
+	}
+
+	.offers-mobile {
+		display: none;
+	}
+
+	.offers {
+		display: block;
+		font-size: 16px;
+	}
+
+	.offer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.offer-details {
+		padding: 30px 0;
+	}
+
+	.offer-value {
+		font-size: 48px;
+		line-height: 24px;
+	}
+
+	.offer-type {
+		font-size: 21px;
+	}
+
+	.offer-notes-content {
+		width: 175px;
+	}
+
+	.separator-circle {
+		height: 25px;
+		width: 25px;
+	}
+
+	.separator-text {
+		font-size: 10px;
+	}
+
+	a.button {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+	    width: 100%;
+	}
+
+	.new-arrivals {
+		width: 300px;
+	}
+
+	h1,h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 21px;
+	}
+
+	.container {
+		font-size: 21px;
+	}
+
+	p.call-to-action {
+		font-size: 16px;
+	}
+
+	p.call-to-action--med {
+		font-size: 21px;
+	}
+
+	p.call-to-action--lg {
+		font-size: 24px;
+	}
+
+	.img-text-wrapper--jewellery {
+		left: 60%;
+	}
+
+	.offers {
+		font-size: 18px;
+	}
+
+	.offer {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.offer-details {
+		padding: 40px 0;
+	}
+
+	.offer-value {
+		font-size: 64px;
+		line-height: 32px;
+	}
+
+	.offer-type {
+		font-size: 24px;
+	}
+
+	.offer-notes-content {
+		width: 200px;
+	}
+
+	.separator-circle {
+		height: 30px;
+		width: 30px;
+	}
+
+	.separator-text {
+		font-size: 12px;
+	}
+
+	a.button {
+		font-size: 21px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+	    width: 100%;
+	}
+
+	.new-arrivals-box {
+		margin: 20px;
+	}
+
+	h1,h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	.container {
+		font-size: 24px;
+	}
+
+	p.call-to-action {
+		font-size: 18px;
+	}
+
+	p.call-to-action--med {
+		font-size: 24px;
+	}
+
+	p.call-to-action--lg {
+		font-size: 28px;
+	}
+
+	.img-text-wrapper--jewellery > div {
+		width: 250px;
+	}
+
+	.offers {
+		font-size: 21px;
+	}
+
+	.offer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.offer-details {
+		padding: 50px 0;
+	}
+
+	.offer-value {
+		font-size: 72px;
+		line-height: 40px;
+	}
+
+	.offer-type {
+		font-size: 30px;
+	}
+
+	.separator-circle {
+		height: 30px;
+		width: 30px;
+	}
+
+	.separator-text {
+		font-size: 12px;
+	}
+
+	a.button {
+		font-size: 24px;
+	}
+}
+
