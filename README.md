@@ -1,2 +1,2 @@
 # steinmart-test
-Skills challenge for Steinmart
+Skills challenge for Stein Mart
